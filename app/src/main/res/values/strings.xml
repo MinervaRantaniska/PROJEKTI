@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PROJEKTI</string>
+    <string name="button_send">OK</string>
+    <string name="edit_message">Kirjoita</string>
+</resources>
