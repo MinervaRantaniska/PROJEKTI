@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFE2E2E0"
-    tools:context=".OhjeActivity">
+    tools:context=".IbsActivity">
 
     <Button
         android:id="@+id/button"
@@ -17,9 +17,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/colorPrimary"
-        android:onClick="toMenu"
+        android:onClick="toMain"
         android:text="menu"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,10 +38,10 @@
         app:layout_constraintTop_toBottomOf="@+id/button">
 
         <TextView
-            android:id="@+id/textViewGuide"
+            android:id="@+id/textViewForIbs"
             android:layout_width="match_parent"
-            android:textSize="25sp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:text="kukkuu"
+            android:textSize="25sp" />
     </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>

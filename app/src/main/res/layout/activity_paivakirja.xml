@@ -4,24 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE2E2E0"
     tools:context=".PaivakirjaActivity">
 
     <Button
-        android:id="@+id/takaisin"
+        android:id="@+id/paivakirjaLisaaButton"
+        android:layout_width="209dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:background="@color/colorPrimary"
+        android:onClick="sendNote"
+        android:text="@string/button_send"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toMenuButton" />
+
+    <Button
+        android:id="@+id/toMenuButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="15dp"
-        android:background="@android:color/holo_blue_dark"
-        android:onClick="takaisin"
-        android:text="TAKAISIN"
-        android:fontFamily="casual"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/OhjeKentta"
+        android:background="@color/colorPrimary"
+        android:onClick="toMenu"
+        android:text="menu"
+        app:layout_constraintEnd_toStartOf="@+id/toHakuButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toHakuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:onClick="toHaku"
+        android:text="haku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toOmaButton"
+        android:layout_width="81dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:onClick="toOma"
+        android:text="oma"
+        app:layout_constraintBottom_toBottomOf="@+id/toHakuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toHakuButton"
+        app:layout_constraintTop_toTopOf="@+id/toHakuButton" />
+
+    <ListView
+        android:id="@+id/paivaKirjaListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paivakirjaLisaaButton" />
 
 </android.support.constraint.ConstraintLayout>

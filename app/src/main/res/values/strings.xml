@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">PROJEKTI</string>
-    <string name="button_send">OK</string>
-    <string name="edit_message">Kirjoita</string>
+    <string name="button_send">Uusi merkintä</string>
+    <string name="edit_message">"  Lisää päivämäärä ja päiväkirjamerkintä"</string>
+    <string name="addTo_OwnList">Lisää uusi ruoka-aine</string>
+    <string name="butto_add">OK</string>
+
+    <string-array name="banner_items">
+        <item>Menu</item>
+        <item>Haku</item>
+        <item>Oma</item>
+        <item>Päiväkirja</item>
+        <item>Ohje</item>
+    </string-array>
+
 </resources>

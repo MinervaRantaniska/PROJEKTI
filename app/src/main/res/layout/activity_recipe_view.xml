@@ -5,26 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFE2E2E0"
-    tools:context=".OhjeActivity">
+    tools:context=".RecipeViewActivity">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/backToRecipes"
+        android:layout_width="117dp"
         android:layout_height="wrap_content"
-
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/colorPrimary"
-        android:onClick="toMenu"
-        android:text="menu"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:onClick="backToRecipes"
+        android:text="RESEPTIHAKU"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -34,13 +33,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button">
+        app:layout_constraintTop_toBottomOf="@+id/backToRecipes">
 
         <TextView
-            android:id="@+id/textViewGuide"
+            android:id="@+id/textViewForRecipes"
             android:layout_width="match_parent"
-            android:textSize="25sp"
-            android:layout_height="match_parent" />
+            android:layout_height="535dp"
+            android:textSize="20sp"
+            android:text="TextView" />
     </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>

@@ -4,124 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE2E2E0"
     tools:context=".MainActivity">
-
-    <ImageButton
-        android:id="@+id/ohjeB"
-        android:layout_width="153dp"
-        android:layout_height="70dp"
-        android:onClick="ohjeB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paivakirjaButton"
-        app:srcCompat="@android:color/holo_purple" />
-
-    <ImageButton
-        android:id="@+id/paivakirjaButton"
-        android:layout_width="154dp"
-        android:layout_height="70dp"
-        android:onClick="paivakirjaB"
-        app:layout_constraintBottom_toTopOf="@+id/ohjeB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/OmalistaButton"
-        app:srcCompat="@android:color/holo_purple" />
-
-    <ImageButton
-        android:id="@+id/OmalistaButton"
-        android:layout_width="154dp"
-        android:layout_height="70dp"
-        android:onClick="omalistaB"
-        app:layout_constraintBottom_toTopOf="@+id/paivakirjaButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hakuButton"
-        app:srcCompat="@android:color/holo_purple" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="6dp"
         android:fontFamily="cursive"
         android:text="FodmAPP"
         android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="39dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/button21"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/hakuButton"
-        android:layout_width="153dp"
-        android:layout_height="70dp"
-        android:onClick="hakuButton"
-        app:layout_constraintBottom_toTopOf="@+id/OmalistaButton"
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:background="@color/colorPrimary"
+        android:onClick="omalistaB"
+        android:text="oma"
+        app:layout_constraintBottom_toTopOf="@+id/button18"
+        app:layout_constraintEnd_toEndOf="@+id/button18"
+        app:layout_constraintStart_toStartOf="@+id/button18"
+        app:layout_constraintTop_toBottomOf="@+id/button21" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:background="@color/colorPrimary"
+        android:onClick="paivakirjaB"
+        android:text="päiväkirja"
+        app:layout_constraintBottom_toTopOf="@+id/button19"
+        app:layout_constraintEnd_toEndOf="@+id/button19"
+        app:layout_constraintStart_toStartOf="@+id/button19"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="112dp"
+        android:layout_height="62dp"
+        android:background="@color/colorPrimary"
+        android:onClick="recipesButtonPressed"
+        android:text="reseptit"
+        app:layout_constraintBottom_toTopOf="@+id/button17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@android:color/holo_purple" />
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:fontFamily="cursive"
-        android:text="Haku"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="110dp"
+        android:layout_height="62dp"
+        android:background="@color/colorPrimary"
+        android:onClick="ibsButton"
+        android:text="ibs"
+        app:layout_constraintBottom_toTopOf="@+id/button20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button19" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="109dp"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary"
+        android:onClick="ohjeB"
+        android:text="ohje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="112dp"
+        android:layout_height="62dp"
+        android:background="@color/colorPrimary"
+        android:onClick="hakuButton"
+        android:text="haku"
+        app:layout_constraintBottom_toTopOf="@+id/button12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginBottom="17dp"
-        android:fontFamily="cursive"
-        android:text="Oma lista"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/OmalistaButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginBottom="19dp"
-        android:fontFamily="cursive"
-        android:text="Päiväkirja"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="@+id/paivakirjaButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:fontFamily="cursive"
-        android:text="Ohjeet"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/ohjeB"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </android.support.constraint.ConstraintLayout>

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OmalistaActivity"></activity>
+        <activity android:name=".RecipeViewActivity"></activity>
+        <activity android:name=".RecipesActivity" />
+        <activity android:name=".IbsActivity" />
+        <activity android:name=".AddItemToMyListActivity" />
+        <activity android:name=".PaivaKirjaMerkinta" />
+        <activity android:name=".OmalistaActivity" />
         <activity android:name=".PaivakirjaActivity" />
         <activity android:name=".hakuTulosActivity" />
         <activity android:name=".HakuActivity" />
